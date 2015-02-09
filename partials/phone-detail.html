@@ -59,5 +59,99 @@
 		</dl>
 	</li>
 
+	<li>
+		<span>Connectivity</span>
+
+		<dl>
+			<dt>Bluetooth<dt>
+			<dd>
+				{{phone.connectivity.bluetooth}}
+			</dd>
+
+			<dt>Cell<dt>
+			<dd>
+				{{phone.connectivity.cell}}
+			</dd>
+			
+			<dt>Gps<dt>
+			<dd>
+				{{phone.connectivity.gps}}
+			</dd>
+
+			<dt>Infrared<dt>
+			<dd>
+				{{phone.connectivity.infrared}}
+			</dd>
+
+			<dt>Wifi<dt>
+			<dd>
+				{{phone.connectivity.wifi}}
+			</dd>
+		</dl>
+	</li>
+
+	<li>
+    	<span>Display</span>
+    	<dl>
+			<dt>Screen size</dt>
+			<dd>{{phone.display.screenSize}}</dd>
+			<dt>Screen resolution</dt>
+			<dd>{{phone.display.screenResolution}}</dd>
+			<dt>Touch screen</dt>
+			<dd>{{phone.display.touchScreen}}</dd>
+    	</dl>
+	</li>
+
+	<li>
+		<span>Hardware</span>
+		<dl>
+			<dt>CPU</dt>
+			<dd>{{phone.hardware.cpu}}</dd>
+			<dt>USB</dt>
+			<dd>{{phone.hardware.usb}}</dd>
+			<dt>Audio / headphone jack</dt>
+			<dd>{{phone.hardware.audioJack}}</dd>
+			<dt>FM Radio</dt>
+			<dd>{{phone.hardware.fmRadio}}</dd>
+			<dt>Accelerometer</dt>
+			<dd>{{phone.hardware.accelerometer}}</dd>
+		</dl>
+	</li>
+
+	<li>
+		<span>Size and Weight</span>
+		<dl>
+			<dt>Dimensions</dt>
+			<dd ng-repeat="dim in phone.sizeAndWeight.dimensions">{{dim}}</dd>
+			<dt>Weight</dt>
+			<dd>{{phone.sizeAndWeight.weight}}</dd>
+		</dl>
+	</li>
+
+	<li>
+    	<span>Storage</span>
+    	<dl>
+			<dt>Flash</dt>
+			<dd>{{phone.storage.flash}}</dd>
+			<dt>Screen resolution</dt>
+			<dd>{{phone.storage.ram}}</dd>
+    	</dl>
+	</li>
+
+	<li>
+    	<span>Android</span>
+    	<dl>
+			<dt>OS</dt>
+			<dd>{{phone.android.os}}</dd>
+			<dt>Screen resolution</dt>
+			<dd>{{phone.android.ui}}</dd>
+    	</dl>
+	</li>
+
+	<li>
+    	<span>AdditionalFeatures</span>
+    	<dd>{{phone.additionalFeatures}}</dd>
+	</li>
+
 </ul>
 
